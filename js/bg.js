@@ -1,9 +1,11 @@
 const body = document.querySelector("body")
 
+const copyright = document.querySelector(".copyright")
+
 const userAgent = navigator.userAgent;
 
-const IMG_NUMBER_LND = 3;
-const IMG_NUMBER_POR = 0;
+const IMG_NUMBER_LND = 9;
+const IMG_NUMBER_POR = 6;
 
 function isMobile(){
 	if (userAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || userAgent.match(/LG|SAMSUNG|Samsung/) != null){
@@ -17,6 +19,7 @@ function paintImageComputer(imgNumber){
     const image = new Image();
     image.src = `./images/landscape/${imgNumber + 1}.jpg`;
     image.classList.add("bgImage");
+    copyright.classList.add("showing");
     body.prepend(image);
 }
 
