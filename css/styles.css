@@ -8,6 +8,7 @@
 body {
   font-family: "Nanum Myeongjo", serif;
   color: white;
+  overflow: hidden;
 }
 
 @keyframes fadeIn {
@@ -360,6 +361,7 @@ body {
   align-items: center;
   animation: smack 2000ms ease-in both;
   animation-delay: 0.5s;
+  max-height: 50vh;
 }
 
 .main-title {
@@ -404,6 +406,22 @@ body {
   border-bottom: var(--white-border);
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+
+.main-body {
+  max-height: 30vh;
+  padding: 10px;
+  padding-top: 0;
+  overflow: auto;
+}
+
+.main-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-body::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 4px;
 }
 
 .link-list {
