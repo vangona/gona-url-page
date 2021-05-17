@@ -409,7 +409,7 @@ body {
 }
 
 .main-body {
-  max-height: 30vh;
+  max-height: 25vh;
   padding: 10px;
   padding-top: 0;
   overflow: auto;
