@@ -2,4 +2,7 @@
   --main-border: 1px solid rgba(0, 0, 0, 0.5);
   --white-border: 1px solid rgba(255, 255, 255, 0.5);
   --white: rgba(255, 255, 255, 0.3);
+  --gold: #c4ab62;
+  --dim-gold: rgba(196, 171, 98, 0.7);
+  --purple: #3f4567;
 }

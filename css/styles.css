@@ -5,10 +5,13 @@
 @import "reset.css";
 @import "variables.css";
 
-body {
+body,
+html {
   font-family: "Nanum Myeongjo", serif;
-  color: white;
+  color: var(--gold);
   overflow: hidden;
+  height: 100%;
+  background-color: var(--purple);
 }
 
 @keyframes fadeIn {
@@ -20,17 +23,19 @@ body {
   }
 }
 
-.header,
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
+  display: flex;
   flex-direction: column;
-  margin: 8% 0 50px 0;
-  animation: smack 2000ms ease-in both;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-title {
@@ -43,325 +48,18 @@ body {
   font-size: 20px;
 }
 
-/* Generated with Bounce.js. Edit at http://bouncejs.com#%7Bs%3A%5B%7BT%3A%22k%22%2Ce%3A%22s%22%2Cd%3A1000%2CD%3A1000%2Cf%3A%7Bx%3A0%2Cy%3A0%7D%2Ct%3A%7Bx%3A40%2Cy%3A60%7D%2Cs%3A3%2Cb%3A4%7D%2C%7BT%3A%22c%22%2Ce%3A%22b%22%2Cd%3A1000%2CD%3A1000%2Cf%3A%7Bx%3A0%2Cy%3A0%7D%2Ct%3A%7Bx%3A1%2Cy%3A1%7D%2Cs%3A2%2Cb%3A4%7D%5D%7D */
-
-@keyframes smack {
-  0% {
-    opacity: 0;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-  49.9% {
-    opacity: 0;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-  50% {
-    opacity: 1;
-    transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-  51.6% {
-    transform: matrix3d(
-      0.345,
-      0.098,
-      0,
-      0,
-      0.065,
-      0.345,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  52.25% {
-    transform: matrix3d(
-      0.485,
-      0.163,
-      0,
-      0,
-      0.107,
-      0.485,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  53.2% {
-    transform: matrix3d(
-      0.673,
-      0.242,
-      0,
-      0,
-      0.158,
-      0.673,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  54.5% {
-    transform: matrix3d(
-      0.88,
-      0.288,
-      0,
-      0,
-      0.188,
-      0.88,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  56.36% {
-    transform: matrix3d(
-      1.064,
-      0.241,
-      0,
-      0,
-      0.159,
-      1.064,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  56.76% {
-    transform: matrix3d(
-      1.087,
-      0.221,
-      0,
-      0,
-      0.146,
-      1.087,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  58.96% {
-    transform: matrix3d(
-      1.139,
-      0.105,
-      0,
-      0,
-      0.07,
-      1.139,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  59.46% {
-    transform: matrix3d(
-      1.137,
-      0.082,
-      0,
-      0,
-      0.055,
-      1.137,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  62.61% {
-    transform: matrix3d(
-      1.075,
-      -0.001,
-      0,
-      0,
-      -0.001,
-      1.075,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  64.51% {
-    transform: matrix3d(
-      1.032,
-      -0.015,
-      0,
-      0,
-      -0.01,
-      1.032,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  65.72% {
-    transform: matrix3d(
-      1.012,
-      -0.017,
-      0,
-      0,
-      -0.011,
-      1.012,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  67.32% {
-    transform: matrix3d(
-      0.994,
-      -0.014,
-      0,
-      0,
-      -0.01,
-      0.994,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  70.07% {
-    transform: matrix3d(
-      0.985,
-      -0.007,
-      0,
-      0,
-      -0.005,
-      0.985,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  78.23% {
-    transform: matrix3d(1, 0.001, 0, 0, 0.001, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-  81.18% {
-    transform: matrix3d(
-      1.002,
-      0.001,
-      0,
-      0,
-      0,
-      1.002,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      1
-    );
-  }
-  90.74% {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-  92.34% {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-  100% {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  }
-}
-
 .main {
+  box-sizing: border-box;
   display: flex;
   border: var(--white-border);
-  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.15);
   padding: 30px;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  animation: smack 2000ms ease-in both;
-  animation-delay: 0.5s;
-  max-height: 50vh;
+  width: 90vw;
+  height: 90vh;
 }
 
 .main-title {
@@ -372,12 +70,19 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: none;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .nav-link {
+  background-color: transparent;
+  color: var(--gold);
+  border: 1px solid var(--dim-gold);
+  border-radius: 10px;
+  width: 100%;
   font-size: 15px;
   padding: 15px;
   margin: 10px;
@@ -398,6 +103,14 @@ body {
 .main-art,
 .main-startup {
   display: none;
+  max-height: 60vh;
+  width: 100%;
+}
+
+.main-coding:hover,
+.main-art:hover,
+.main-startup:hover {
+  cursor: pointer;
 }
 
 .link-title {
@@ -409,7 +122,7 @@ body {
 }
 
 .main-body {
-  max-height: 25vh;
+  height: 60vh;
   padding: 10px;
   padding-top: 0;
   overflow: auto;
@@ -428,13 +141,14 @@ body {
   text-align: center;
   font-size: 13px;
   line-height: 20px;
-  padding: 5px 0;
+  padding: 10px;
+  margin-bottom: 0.5rem;
   border: 0px solid rgba(255, 255, 255, 0);
+  border: var(--white-border);
+  border-radius: 30px;
 }
 
 .link-list:hover {
-  border: var(--white-border);
-  border-radius: 30px;
   transition: border 0.5s linear;
 }
 
