@@ -75,6 +75,21 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.nav::-webkit-scrollbar {
+  width: 5px;
+}
+
+.nav::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.nav::-webkit-scrollbar-corner {
+  display: none;
 }
 
 .nav-link {
@@ -82,7 +97,7 @@ html {
   color: var(--gold);
   border: 1px solid var(--dim-gold);
   border-radius: 10px;
-  width: 100%;
+  width: 90%;
   font-size: 15px;
   padding: 15px;
   margin: 10px;
