@@ -216,7 +216,7 @@ html {
 @media screen and (max-width: 767px) {
   .header-title {
     font-size: 20px;
-    margin-top: 25%;
+    margin-top: 15%;
   }
 
   .header-subtitle {
